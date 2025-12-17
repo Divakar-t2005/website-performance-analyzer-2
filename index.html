@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Performance Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Website Performance Analyzer Tool</h1>
+        <input type="text" id="websiteUrl" placeholder="Enter website URL (with https://)">
+        <button id="analyzeBtn">Analyze</button>
+
+        <div id="results" class="hidden">
+            <h2>Analysis Results</h2>
+            <p><strong>Page Load Time:</strong> <span id="loadTime">0</span> ms</p>
+            <p><strong>Number of Images:</strong> <span id="imageCount">0</span></p>
+            <p><strong>Total Page Size:</strong> <span id="pageSize">0</span> KB</p>
+            <p><strong>Number of Scripts:</strong> <span id="scriptCount">0</span></p>
+            <p><strong>Number of Stylesheets:</strong> <span id="styleCount">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
